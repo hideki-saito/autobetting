@@ -1,0 +1,27 @@
+We would like a python script that scrapes all tennis scores and betting odds from the url below for a given date range and saves them in a csv file with one tennis match per row.
+
+http://www.tennisexplorer.com/results/?type=all&year=2016&month=08&day=11
+
+An example of the field names and values we require is below. The surface and full names can be found on the match-detail page by clicking the "info" link for each match.
+
+date: 11/08/2016
+time: 21:00
+tournament: Gatineau ITF
+tournament_url: http://www.tennisexplorer.com/gatineau-itf/2016/wta-women/
+is_atp: false
+is_singles: true
+player1: Rogowska O.
+player2: Imanishi M.
+player1_url: http://www.tennisexplorer.com/player/rogowska
+player2_url: http://www.tennisexplorer.com/player/imanishi
+scores1: 6|6
+scores2: 2|3
+odds1: 1.45
+odds2: 2.52
+match_url: http://www.tennisexplorer.com/match-detail/?id=1474699
+surface: hard
+full_name1: Rogowska Olivia
+full_name2: Imanishi Miharu
+
+
+python scrape.py 2016-01-01 2016-03-02 output.csv
